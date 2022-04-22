@@ -17,8 +17,8 @@ public class GoogleReviewService {
 		try {
 			OkHttpClient client = new OkHttpClient().newBuilder().build();
 			Request request = new Request.Builder()
-					.url("https://maps.googleapis.com/maps/api/place/details/json?place_id=" + placeId
-							+ "&key=AIzaSyAY4laI5diAuDLkgC4bLgqOBQSadKSvoGI")
+					.url("https://maps.googleapis.com/maps/api/plac + placeId
+							+ "&key")
 					.method("GET", null).build();
 			Response response = client.newCall(request).execute();
 			// System.out.println(response.body().string());
